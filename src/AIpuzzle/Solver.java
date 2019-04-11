@@ -2,7 +2,7 @@
 package AIpuzzle;
 
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.MinPQ;
+import edu.princeton.cs.algs4.MinPQ;//priority queue
 import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Comparator;
@@ -12,7 +12,7 @@ import java.util.LinkedList;
 ******************************** 
 *                +---+---+---+  *
 *                | 1 | 2 | 3 |  *
-*                +---+---+---+  *  or 4*4,5*5 etc.
+*                +---+---+---+  *  or 4x4,5x5 etc.
 *   Goal State:  | 4 | 5 | 6 |  *
 *                +---+---+---+  *
 *                | 7 | 8 | 0 |  *
@@ -90,7 +90,7 @@ public class Solver {
     // solve a slider puzzle (given below)
     public static void main(String[] args) {
         // create initial board from file
-        In in = new In("examples\\3x3-2.txt");
+        In in = new In("examples\\3x3-2.txt");//or new In(args[0]);
         int n = in.readInt();
         int[][] blocks = new int[n][n];
         for (int i = 0; i < n; i++)
