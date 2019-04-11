@@ -18,7 +18,7 @@ we need to make (including those already made) is at least its priority, using e
 Hamming or Manhattan priority function.
 
 There are two priority functions for this problem;
-
+### Heuristics Options:
 **Hamming priority function**. The number of blocks in the wrong position, 
 plus the number of moves made so far to get to the search node. 
 Intutively, a search node with a small number of blocks in the wrong 
@@ -40,3 +40,15 @@ The program consists of two Classes:
 Board.java:Content class Board - a nxn matrix, initiate with a nxn table of int (int[n][n])
 
 Solver.java:The main class,problem solver use A* algorhithm, input a Board(Board board), and output a solution
+
+->Ready puzzles are included in the examples file.
+
+### Simply program flow:
+The intuitive functions used in the program are mentioned above.The priority queue of these functions is provided with the MinPQ data type in the 'algs4' library.The program first reads the puzzle from the .txt extension in the examples and first looks at its solvability.The puzzles that can then be solved reach the goal state with minimal moves using the twin swap left right etc. with the heuristic functions in the Board.java class and shows the number and steps of the moves as the output
+
+### Conclusion:
+In cases where the 8puzzle problem is solvable, the result can be reached more quickly with intuitive search methods.
+When we consider the solution of the problem with real intelligence, we can see that there is also an intuitive search, the move that is estimated to be closer to the solution is generally the next move. In this context, intuitive search methods with artificial intelligence can be considered as simple modeling of search with real intelligence.
+
+### Output:
+![output](https://github.com/brknt/8puzzle-AI-Project1/blob/master/goalstate.JPG)
