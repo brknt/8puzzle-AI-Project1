@@ -49,6 +49,7 @@ The intuitive functions used in the program are mentioned above.The priority que
 ### Conclusion:
 In cases where the 8puzzle problem is solvable, the result can be reached more quickly with intuitive search methods.
 When we consider the solution of the problem with real intelligence, we can see that there is also an intuitive search, the move that is estimated to be closer to the solution is generally the next move. In this context, intuitive search methods with artificial intelligence can be considered as simple modeling of search with real intelligence.
-
+### 8-puzzle state space:
+![stateSpace](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/puzzle-1.jpg)
 ### Output:
 ![output](https://github.com/brknt/8puzzle-AI-Project1/blob/master/goalstate.JPG)
